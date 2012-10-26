@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 audio engine demo</title>
+    <style>
+        html body {
+            margin: 0;
+            border: 0 none;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+
+        /*
+            Div is "hidden" by setting 0 x 0 dimensions instead of display 'none' because
+            IE 9 will not wait for hidden divs to fully load
+        */
+        #cache {
+            position: absolute;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+        }
+    </style>
+    <script type="text/javascript" src="js/thirdparty/caat.js"></script>
+    <script type="text/javascript" src="js/internal/yaak.js"></script>
+    <script type="text/javascript" src="js/internal/audiosys.js"></script>
+    <script type="text/javascript" src="js/internal/appmain.js"></script>
+</head>
+<body>
+<div id="cache">
+    <img id="imgtitle" src="images/title.png"/>
+</div>
+</body>
+</html>
