@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7959832d-2d3d-48a6-bc41-47ea7b5dc441" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/main.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLinters/jslint.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/sass_stdlib.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/yaak.js" afterPath="$PROJECT_DIR$/build/yaak.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/whack_a_cat/js/internal/appmain.js" afterPath="$PROJECT_DIR$/examples/whack_a_cat/js/internal/appmain.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/whack_a_cat/js/internal/audiosys.js" afterPath="$PROJECT_DIR$/examples/whack_a_cat/js/internal/audiosys.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/whack_a_cat/js/internal/yaak.js" afterPath="$PROJECT_DIR$/examples/whack_a_cat/js/internal/yaak.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="DELETED" beforePath="C:\dev\wappworks\tech\libs\yaak.js\main\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\dev\wappworks\tech\libs\yaak.js\main\build\yaak.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\dev\wappworks\tech\libs\yaak.js\main\logos\yaak.psd" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="main.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,46 +26,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="16" selection-start="771" selection-end="771" vertical-scroll-proportion="0.5756208">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="yaak.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/yaak.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="1877" selection-end="1877" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="yaak.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/whack_a_cat/js/internal/yaak.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="6" selection-start="1685" selection-end="1689" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="audiosys.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/whack_a_cat/js/internal/audiosys.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="206" column="4" selection-start="5916" selection-end="5916" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="appmain.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/whack_a_cat/js/internal/appmain.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="425" column="120" selection-start="13986" selection-end="13986" vertical-scroll-proportion="0.0">
+            <state line="16" column="0" selection-start="588" selection-end="588" vertical-scroll-proportion="0.3211334">
               <folding />
             </state>
           </provider>
@@ -98,6 +53,7 @@
         <option value="$PROJECT_DIR$/examples/whack_a_cat/js/internal/audiosys.js" />
         <option value="$PROJECT_DIR$/examples/whack_a_cat/js/internal/appmain.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -152,92 +108,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="whack_a_cat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="whack_a_cat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="whack_a_cat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="internal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
@@ -332,37 +209,30 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/examples/whack_a_cat/js/internal/audiosys.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="206" column="4" selection-start="5916" selection-end="5916" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/whack_a_cat/js/internal/yaak.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="6" selection-start="1685" selection-end="1689" vertical-scroll-proportion="0.0">
+        <state line="34" column="6" selection-start="1685" selection-end="1689" vertical-scroll-proportion="0.53724605">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/yaak.js">
+    <entry file="file://$PROJECT_DIR$/examples/whack_a_cat/js/internal/audiosys.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1877" selection-end="1877" vertical-scroll-proportion="0.0">
+        <state line="206" column="4" selection-start="5916" selection-end="5916" vertical-scroll-proportion="0.78893906">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/whack_a_cat/js/internal/appmain.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="425" column="120" selection-start="13986" selection-end="13986" vertical-scroll-proportion="0.0">
+        <state line="425" column="120" selection-start="13986" selection-end="13986" vertical-scroll-proportion="0.2200903">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="16" selection-start="771" selection-end="771" vertical-scroll-proportion="0.5756208">
+        <state line="16" column="0" selection-start="588" selection-end="588" vertical-scroll-proportion="0.3211334">
           <folding />
         </state>
       </provider>
