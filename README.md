@@ -1,6 +1,6 @@
 ![YAAK.js](http://wappworks.github.com/yaak.js/logos/yaak.png "YAAK.js")
 ==================
-YAAK.js (_Y_et _A_nother _A_udio _K_it) is an HTML5 Open Source audio system for web browsers and HTML5
+YAAK.js (<strong>Y</strong>et <strong>A</strong>nother <strong>A</strong>udio <strong>K</strong>it) is an HTML5 Open Source audio system for web browsers and HTML5
 app acceleration platforms such as CocoonJs and AppMobi. 
 
 The audio system originated from the commercially released game, [Hyper Grav](http://www.wappworks.com/portfolio/hyper-grav/).
