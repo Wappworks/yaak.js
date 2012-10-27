@@ -32,7 +32,7 @@
  * either expressed or implied, of the FreeBSD Project.
  */
 
-var APP = APP || {};
+var YAAK = YAAK || {};
 
 (function() {
     "use strict";
@@ -40,11 +40,10 @@ var APP = APP || {};
     // Private
     // ----------------------------------------------
 
-    // Public exports
+    // Exports
     // ----------------------------------------------
-
     //noinspection JSValidateJSDoc
-    APP.Class = {
+    YAAK.Object = {
 
         /**
          *  Mix the source object into the target object
@@ -147,7 +146,7 @@ var APP = APP || {};
 
     // Export
     // ---------------------------------------
-    APP.PLATFORM = {
+    YAAK.PLATFORM = {
         /**
          * Determines if the platform supports audio
          *
@@ -168,7 +167,7 @@ var APP = APP || {};
             if( typeof url !== "string" )
                 return false;
 
-            return APP.PLATFORM.canPlayAudioType(url.substr( url.lastIndexOf('.') + 1 ));
+            return YAAK.PLATFORM.canPlayAudioType(url.substr( url.lastIndexOf('.') + 1 ));
         },
 
         /**
@@ -293,7 +292,7 @@ var APP = APP || {};
          * @returns this
          */
         setLooped: function (looped ) {
-            if( APP.PLATFORM.hasNativeAudioLoop() ) {
+            if( YAAK.PLATFORM.hasNativeAudioLoop() ) {
                 this.loop = looped;
                 return this;
             }
@@ -314,7 +313,7 @@ var APP = APP || {};
 
     // Export
     // ---------------------------------------
-    APP.AUDIOEXT = {
+    YAAK.AUDIOEXT = {
         /**
          * Instantiates an extended HTML5AudioElement
          *
@@ -322,7 +321,7 @@ var APP = APP || {};
          */
         instantiate: function() {
             var inst = document.createElement('audio');
-            APP.Class.mix( inst, AudioExt.prototype );
+            YAAK.Object.mix( inst, AudioExt.prototype );
 
             return inst;
         }
@@ -359,7 +358,7 @@ var APP = APP || {};
         addAudio: function( id, audioIdentifier ) {
             var identifierSize, identifierIndex;
 
-            if( !APP.PLATFORM.canPlayAudio() )
+            if( !YAAK.PLATFORM.canPlayAudio() )
                 return false;
 
             if( audioIdentifier instanceof Array ) {
@@ -434,7 +433,7 @@ var APP = APP || {};
             var me = this,
                 audioInst;
 
-            if( !APP.PLATFORM.canPlayAudioType(url.substr( url.lastIndexOf('.') + 1 )) )
+            if( !YAAK.PLATFORM.canPlayAudioType(url.substr( url.lastIndexOf('.') + 1 )) )
                 return false;
 
             audioInst = document.createElement('audio');
@@ -463,7 +462,7 @@ var APP = APP || {};
                 me = this,
                 audioInst;
 
-            if( !APP.PLATFORM.canPlayAudioType(url.substr( url.lastIndexOf('.') + 1 )) )
+            if( !YAAK.PLATFORM.canPlayAudioType(url.substr( url.lastIndexOf('.') + 1 )) )
                 return false;
 
             audioInst = document.createElement('audio');
@@ -479,7 +478,7 @@ var APP = APP || {};
     };
 
 
-    APP.AudioCache = AudioCache;
+    YAAK.AudioCache = AudioCache;
 })();
 
 (function () {
@@ -620,7 +619,7 @@ var APP = APP || {};
          * Initialize the instance
          *
          * @param {Number}          [channelsMax]
-         * @param {APP.AudioCache}  [audioCache]
+         * @param {YAAK.AudioCache}  [audioCache]
          *
          * @returns this
          */
@@ -628,7 +627,7 @@ var APP = APP || {};
             var channelIndex,
                 soundInst;
 
-            this.active = APP.PLATFORM.canPlayAudio();
+            this.active = YAAK.PLATFORM.canPlayAudio();
 
             // Not active? We're done...
             if( !this.active )
@@ -638,7 +637,7 @@ var APP = APP || {};
                 channelsMax = kChannelsMaxDefault;
 
             if( audioCache == null )
-                audioCache = new APP.AudioCache();
+                audioCache = new YAAK.AudioCache();
 
             this.cache          = audioCache;
             this.soundInactive  = [];
@@ -652,7 +651,7 @@ var APP = APP || {};
             })(this);
 
             for( channelIndex = 0; channelIndex < channelsMax; channelIndex++ ) {
-                soundInst = APP.AUDIOEXT.instantiate();
+                soundInst = YAAK.AUDIOEXT.instantiate();
 
                 // Code to handle stalls
                 soundInst.addEventListener( "stalled", function(event) {
@@ -668,13 +667,13 @@ var APP = APP || {};
         /**
          * Set the audio cache
          *
-         * @param   {APP.AudioCache}        cache
+         * @param   {YAAK.AudioCache}        cache
          *
          * @returns  this
          */
         setAudioCache: function( cache ) {
             if( cache == null )
-                cache = new APP.AudioCache();
+                cache = new YAAK.AudioCache();
 
             this.cache = cache;
 
@@ -907,5 +906,5 @@ var APP = APP || {};
     };
 
 
-    APP.AudioChannel = AudioChannel;
+    YAAK.AudioChannel = AudioChannel;
 })();

@@ -66,9 +66,9 @@ var APP = APP || {};
          * @returns {AudioSys}
          */
         init: function() {
-            this.cache = new APP.AudioCache();
-            this.channelSfx = new APP.AudioChannel().init( 3, this.cache );
-            this.channelMusic = new APP.AudioChannel().init( 1, this.cache )
+            this.cache = new YAAK.AudioCache();
+            this.channelSfx = new YAAK.AudioChannel().init( 3, this.cache );
+            this.channelMusic = new YAAK.AudioChannel().init( 1, this.cache )
                 .setVolume( 0.5 );
 
             return this;

@@ -230,7 +230,7 @@
         return true;
     };
 
-    APP.Class.extend( Kitty, CAAT.ActorContainer );
+    YAAK.Object.extend( Kitty, CAAT.ActorContainer );
 
     // Private
     // ---------------------------------------

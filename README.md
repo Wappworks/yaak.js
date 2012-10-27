@@ -1,6 +1,6 @@
 YAAK.js
 ==================
-YAAK.js (Yet Another Audio system for Kicks) is a pure HTML5 audio system. The 
+YAAK.js is Yet Another Audio system for Kicks - an HTML5 audio system. The
 library is designed from the ground to work with desktop web browsers and HTML5 
 app acceleration platforms such as CocoonJs and AppMobi. 
 
@@ -28,11 +28,11 @@ VERSION HISTORY
 - None
  
 ### 1.0.0
-- First release (as presented at the Seattle Javascript Game Development Meetup)
+- First release.
 
 AUTHORS
 ------------------
-[Chris Khoo](chris.khoo@wappworks.com) - [Wappworks Studio](http://www.wappworks.com)
+[Chris Khoo](mailto:chris.khoo@wappworks.com) - [Wappworks Studio](http://www.wappworks.com)
 
 
 LICENSE
