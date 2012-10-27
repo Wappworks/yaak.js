@@ -1,4 +1,4 @@
-YAAK.js
+[YAAK.js](http://wappworks.github.com/yaak.js/logos/yaak.png)
 ==================
 YAAK.js (Yet Another Audio Kit) is an HTML5 Open Source audio system for web browsers and HTML5
 app acceleration platforms such as CocoonJs and AppMobi. 
