@@ -1,11 +1,9 @@
 YAAK.js
 ==================
-YAAK.js is Yet Another Audio system for Kicks - an HTML5 audio system. The
-library is designed from the ground to work with desktop web browsers and HTML5 
+YAAK.js (Yet Another Audio Kit) is an HTML5 Open Source audio system for web browsers and HTML5
 app acceleration platforms such as CocoonJs and AppMobi. 
 
-The audio system originally started off as the game audio system for the commercially 
-released game, [Hyper Grav](http://www.wappworks.com/portfolio/hyper-grav/).  
+The audio system originated from the commercially released game, [Hyper Grav](http://www.wappworks.com/portfolio/hyper-grav/).
 
 
 FEATURES
