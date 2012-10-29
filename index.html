@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <title>YAAK.js | Wappworks Studio</title>
     <style type="text/css">
+        html {
+            margin: 0;
+            border: none 0;
+            background-color: #8f41a3;
+        }
+
         a, a:visited {
             color: #4183C4;
             text-decoration: none;
@@ -16,21 +22,75 @@
             outline: medium none;
         }
 
-        h1 {
+        h1, h2, h3 {
             border-bottom: 1px solid #CCCCCC;
+        }
+
+        .imgdemo {
+            display: inline-block;
+            margin: 5px;
+            padding: 0;
+            border: none 0;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .imgdemo p {
+            margin: 0;
+        }
+
+        .imgdemo a, .imgdemo a:visited {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .imgdemo a:hover {
+            color: #4183C4;
+        }
+
+        #main {
+            background-color: #ffffff;
+            margin: 20px auto;
+            padding: 20px;
+            width: 600px;
+
+            border-radius: 20px;
         }
     </style>
 </head>
 <body>
-<img src="logos/yaak.png" />
-<div>
+<div id="main">
+    <img src="logos/yaak.png" />
     <h1>Introduction</h1>
-    <p>YAAK (<strong>Y</strong>et <strong>A</strong>nother <strong>A</strong>udio <strong>K</strong>it) is an Open Source HTML5 game audio system for web browsers and native HTML5 app acceleration platforms such as <a href="http://www.ludei.com/tech/cocoonjs">CocoonJs</a> and <a href="http://www.appmobi.com/">AppMobi</a>. The library is distributed under the FreeBSD license and is hosted on GitHub.</p>
-    <p><a href="https://github.com/Wappworks/yaak.js">Click here to go to the GitHub repo</a>.</p>
-    <h1>Demos</h1>
+    <p>YAAK (<strong>Y</strong>et <strong>A</strong>nother <strong>A</strong>udio <strong>K</strong>it) is an Open Source HTML5 game audio system for web browsers and native HTML5 app acceleration platforms such as <a href="http://www.ludei.com/tech/cocoonjs">CocoonJs</a> and <a href="http://www.appmobi.com/">AppMobi</a>. The library is hosted on GitHub and is distributed under the FreeBSD Open source license.</p>
+    <p><a href="https://github.com/Wappworks/yaak.js">Click here for the GitHub repository</a></p>
+    <h1>System Features</h1>
     <ul>
-        <li><a href="examples/whack_a_cat/index.html">Whack-a-cat game demo</a></li>
+        <li>Audio loading/caching</li>
+        <li>Mute/unmute</li>
+        <li>Standard sound playback and looping</li>
+        <li>Sound channel support</li>
+        <ul>
+            <li>Polyphony limits</li>
+            <li>Volume control</li>
+            <li>Mute/un-mute</li>
+            <li>Stop all sounds</li>
+        </ul>
+        <li>Per active sound playback control</li>
+        <ul>
+            <li>Stop</li>
+            <li>Volume control</li>
+        </ul>
     </ul>
+    <h1>Demos</h1>
+    <div class="imgdemo">
+        <a href="examples/whack_a_cat/index.html">
+        <p><img src="images/whack_a_cat.jpg"
+                width="160px" height="120px"
+                alt="Whack-a-cat demo"/></p>
+        <p>Whack-a-cat</p>
+        </a>
+    </div>
 </div>
 </body>
 </html>
