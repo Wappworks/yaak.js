@@ -888,7 +888,7 @@ var YAAK = YAAK || {};
             soundCurr.playId = this.playId++;
             soundCurr.setGlobalVolume( this.mute ? 0 : this.volume, vol == null ? 1 : vol );
    
-            //soundCurr.setLooped( true );
+            soundCurr.setLooped( true );
 
             soundCurr.src = targetAudio.src;
  			soundCurr.play();
