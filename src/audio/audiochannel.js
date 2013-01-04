@@ -300,16 +300,23 @@ var YAAK = YAAK || {};
                 targetAudio,
                 soundCurr;
 
+        
             // Not active? We're done...
-            if( !this.active )
+            if( !this.active ) {
+                 YAAK.Debugger.log("Did not playOneShot: "  + id + " due to the handle being inactive");
                 return handle;
-
-            if( this.mute )
+            }
+            
+            if( this.mute ) {
+            	YAAK.Debugger.log("Did not playOneShot: " + id + " due to the handle being on mute");
                 return handle;
-
+            }
+            
             targetAudio = this.cache.getAudioElement( id );
-            if( targetAudio == null )
+            if( targetAudio == null ) {
+            	YAAK.Debugger.log("Could not find the audio element for: " + id)
                 return handle;
+            }
 
             if( soundInactive.length <= 0 ) {
                 // If we allow for always play, end the oldest channel..
@@ -327,7 +334,7 @@ var YAAK = YAAK || {};
             soundCurr.src = targetAudio.src;
             soundCurr.play();
             this.soundActive.push( soundCurr );
-
+            YAAK.Debugger.log("Currenting playing (one shot): " + id);
             handle.init( id, this, soundCurr );
             return handle;
         },
@@ -346,14 +353,17 @@ var YAAK = YAAK || {};
                 soundInactive = this.soundInactive,
                 targetAudio,
                 soundCurr;
-
-            // Not active? We're done...
-            if( !this.active )
+             // Not active? We're done...
+            if( !this.active ) {
+                 YAAK.Debugger.log("Did not playOneShot: "  + id + " due to the handle being inactive");
                 return handle;
+            }
 
-            targetAudio = this.cache.getAudioElement( id );
-            if( targetAudio == null )
+             targetAudio = this.cache.getAudioElement( id );
+            if( targetAudio == null ) {
+                YAAK.Debugger.log("Could not find the audio element for: " + id)
                 return handle;
+            }
 
             if( soundInactive.length <= 0 ) {
                 // If we allow for always play, end the oldest channel..
@@ -371,7 +381,7 @@ var YAAK = YAAK || {};
             soundCurr.src = targetAudio.src;
             soundCurr.play();
             this.soundActive.push( soundCurr );
-
+             YAAK.Debugger.log("Currenting playing (looped): " + id);
             handle.init( id, this, soundCurr );
 
             return handle;
