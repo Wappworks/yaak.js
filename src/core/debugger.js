@@ -2,11 +2,11 @@
 (function() {
   "use strict";
 	
-	function Debugger() {
-    return this;
-  }
+    function Debugger() {
+    	return this;
+    }
 	
-	Debugger.prototype = {
+    Debugger.prototype = {
 		debugMode: false,
 		
 		log: function(message) {
