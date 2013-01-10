@@ -206,6 +206,31 @@ var YAAK = YAAK || {};
 
 (function() {
     "use strict";
+	
+	function Debugger() {
+        return this;
+    }
+	
+	Debugger.prototype = {
+		debugMode: false,
+		
+		log: function(message) {
+			if(this.debugMode === true) {
+				console.log("YAAK: " + message);
+			} 
+		},
+		
+		setDebugMode: function(bol) {
+			this.debugMode = bol;
+		}
+	};
+	
+	YAAK.Debugger = new Debugger();
+	
+})();
+
+(function() {
+    "use strict";
 
     // Constants
     // ---------------------------------------
@@ -775,40 +800,49 @@ var YAAK = YAAK || {};
          *
          * @returns {AudioChannel.Handle}
          */
-        playOneShot : function( id, vol, alwaysPlay ) {
+      playOneShot : function( id, vol, alwaysPlay ) {
             var handle = new AudioChannel.Handle(),
                 soundInactive = this.soundInactive,
                 targetAudio,
                 soundCurr;
 
             // Not active? We're done...
-            if( !this.active )
+            if( !this.active ) {
+                 YAAK.Debugger.log("Did not playOneShot: "  + id + " due to the channel being inactive");
                 return handle;
-
-            if( this.mute )
+            }
+            
+            if( this.mute ) {
+            	YAAK.Debugger.log("Did not playOneShot: " + id + " due to the channel being on mute");
                 return handle;
-
+            }
+            
             targetAudio = this.cache.getAudioElement( id );
-            if( targetAudio == null )
+            if( targetAudio == null ) {
+            	YAAK.Debugger.log("Could not find the audio element for: " + id)
                 return handle;
+            }
 
             if( soundInactive.length <= 0 ) {
                 // If we allow for always play, end the oldest channel..
                 if( alwaysPlay )
+                	
                     this.endSound( this.soundActive[0] );
                 else
                     return handle;
             }
-
+            
+            
             soundCurr = soundInactive.shift();
             soundCurr.playId = this.playId++;
             soundCurr.setGlobalVolume( this.volume, vol == null ? 1 : vol );
             soundCurr.addEventListener( "ended", this.cbEndOneShot, false );
 
             soundCurr.src = targetAudio.src;
-            soundCurr.play();
+            soundCurr.play()
+            YAAK.Debugger.log("Currenting playing (one shot): " + id);
             this.soundActive.push( soundCurr );
-
+            
             handle.init( id, this, soundCurr );
             return handle;
         },
@@ -829,34 +863,42 @@ var YAAK = YAAK || {};
                 soundCurr;
 
             // Not active? We're done...
-            if( !this.active )
+            if( !this.active ) {
+            	 YAAK.Debugger.log("Did not playLooped: "  + id + " due to the channel being inactive");
                 return handle;
-
+            }
+            
             targetAudio = this.cache.getAudioElement( id );
-            if( targetAudio == null )
+            if( targetAudio == null ) {
+            	YAAK.Debugger.log("Could not find the audio element for: " + id)
                 return handle;
+            }
+
 
             if( soundInactive.length <= 0 ) {
                 // If we allow for always play, end the oldest channel..
+
                 if( alwaysPlay )
                     this.endSound( this.soundActive[0] );
                 else
                     return handle;
             }
-
+           
             soundCurr = soundInactive.shift();
             soundCurr.playId = this.playId++;
             soundCurr.setGlobalVolume( this.mute ? 0 : this.volume, vol == null ? 1 : vol );
+   
             soundCurr.setLooped( true );
 
             soundCurr.src = targetAudio.src;
-            soundCurr.play();
+ 			soundCurr.play();
             this.soundActive.push( soundCurr );
-
+            YAAK.Debugger.log("Currenting playing (looped): " + id);
             handle.init( id, this, soundCurr );
 
             return handle;
         },
+
 
         /**
          * Ends an active sound
